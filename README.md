@@ -1,0 +1,1 @@
+Respository für das Projektstudium "SAPLEXA" | Daniel Kinzelman, Adrian Gröne, ..., ..., ..., ..., ... | Semester 5
