@@ -1,0 +1,12 @@
+Grundlagen:
+- Programmiersprache: JAVA
+- Programmierumgebung: Eclipse
+- SpeechToText: Google Cloud Speech to Text API JAVA
+- SAP JAVA Connector
+
+
+
+Backlog Liste:
+- API Speech to Text (gesprochener Text wird in der Console ausgegeben)
+- API zur Selekion und Darstellung der offenen Positionen zur Bestllnummer
+- Funktion Buchen Wareneingang zur Bestellposition
