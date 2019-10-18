@@ -1,6 +1,7 @@
 Grundlagen:
 - Programmiersprache: JAVA
 - Programmierumgebung: Eclipse
+- Projekt Management Tool: Maven
 - SpeechToText: Google Cloud Speech to Text API JAVA
 - SAP JAVA Connector
 
