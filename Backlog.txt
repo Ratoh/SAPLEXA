@@ -2,7 +2,7 @@ Grundlagen:
 - Programmiersprache: JAVA
 - Programmierumgebung: Eclipse
 - Projekt Management Tool: Maven
-- SpeechToText: Google Cloud Speech to Text API JAVA
+- SpeechToText: Google Cloud Speech to Text API JAVA (Präziser und besser dokumeniert als Sphinx4)
 - SAP JAVA Connector
 (- Jira als Agile Projekt Management Lösung)
 
