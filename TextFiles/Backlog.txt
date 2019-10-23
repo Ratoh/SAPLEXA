@@ -1,0 +1,22 @@
+Grundlagen:
+- Programmiersprache: JAVA
+- Programmierumgebung: Eclipse
+- Projekt Management Tool: Maven
+- SpeechToText: Google Cloud Speech to Text API JAVA (Präziser und besser dokumeniert als Sphinx4)
+- SAP JAVA Connector
+(- Jira als Agile Projekt Management Lösung)
+
+
+Backlog Liste:
+- API Speech to Text (gesprochener Text wird in der Console ausgegeben)
+- API zur Selekion und Darstellung der offenen Positionen zur Bestellnummer
+- Funktion Buchen Wareneingang zur Bestellposition
+
+
+Sprint Backlog (1):
+- Anwendung die Sprache in Text übersetzt (Speech2Text)
+    - Auswahl API Speech2Text (Englisch)
+    - Anwendungsframework
+    - Ergebnissliste ausgeben
+
+    DoD: Anwendung versteht gesprochenes Wort/Zahl/Ziffernfolge
