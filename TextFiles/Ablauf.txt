@@ -1,0 +1,7 @@
+- Bestellung für Lieferanten anlegen (me21n)
+- Bestellnummer wird erstellt
+- Bestellung mit Bestellnummer anzeigen lassen (me23n)
+- Bestellnummer eingeben
+
+- SAPLEXA zeige mir alle offenen positionen zur "Bestellnummer" (Auf Lieferschein zu finden)
+- me2n
