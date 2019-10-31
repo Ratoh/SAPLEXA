@@ -1,7 +1,6 @@
 package main.java.goxr3plus.sphinx5mavenexample.application;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -28,6 +27,8 @@ public class Main {
 	 * This String contains the Result that is coming back from SpeechRecognizer
 	 */
 	private String speechRecognitionResult;
+	public String number = "";
+	public boolean recordNumber = false;
 	
 	//-----------------Lock Variables-----------------------------
 	
@@ -130,13 +131,13 @@ public class Main {
 				//Information			
 				logger.log(Level.INFO, "You can start to speak...\n");
 				
+				
 				try {
 					while (speechRecognizerThreadRunning) {
 						/*
 						 * This method will return when the end of speech is reached. Note that the end pointer will determine the end of speech.
 						 */
 						SpeechResult speechResult = recognizer.getResult();
-						
 						//Check if we ignore the speech recognition results
 						if (!ignoreSpeechRecognitionResults) {
 							
@@ -151,7 +152,7 @@ public class Main {
 								//You said?
 								System.out.println("You said: [" + speechRecognitionResult + "]\n");
 								
-								//Call the appropriate method 
+								//Call the appropriate method
 								makeDecision(speechRecognitionResult, speechResult.getWords());
 								
 							}
@@ -231,37 +232,26 @@ public class Main {
 	 */
 	public void makeDecision(String speech , List<WordResult> speechWords) {
 		
-		//System.out.println(speech);
+		System.out.println("Making Decision for: ["+speech+"]");
 		
-		// Split the sentence
-		String[] array = speech.split(" ");
-		
-		for (int i=0; i<array.length; i++)
-		{
-			if ("start".equals(array[0]))
-			{
-				System.out.println("SAPLEXA now Active!");
-			}else if ("delivery".equals(array[0])) 
-			{
-				//int j = 0;
-				if ("stop".equals(array[i]))
-				{
-					System.out.println("SWAG");
-					List<String> delivery_number = new ArrayList<String>();
-					delivery_number.add(array[i]);
-					System.out.println(delivery_number);
-				}else
-				{
-					System.out.println("Hallo");
-				}
-				
-			}
-					
+		switch(speech) {
+		case "zero": if(recordNumber) { number+="0";}break;
+		case "one": if(recordNumber) { number+="1";}break;
+		case "two": if(recordNumber) { number+="2";}break;
+		case "three": if(recordNumber) { number+="3";}break;
+		case "four": if(recordNumber) { number+="4";}break;
+		case "five": if(recordNumber) { number+="5";}break;
+		case "six": if(recordNumber) { number+="6";}break;
+		case "seven": if(recordNumber) { number+="7";}break;
+		case "eight": if(recordNumber) { number+="8";}break;
+		case "nine": if(recordNumber) { number+="9";}break;
+		case "start number": {number="";recordNumber=true;break;}
+		case "end number": {recordNumber=false;System.out.println("Number is:"+number);}break;
+		default: System.out.println("DEFAULT CASE");
 		}
-		
-		
-		
 	}
+		
+
 	
 	public boolean getIgnoreSpeechRecognitionResults() {
 		return ignoreSpeechRecognitionResults;
