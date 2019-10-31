@@ -235,30 +235,66 @@ public class Main {
 		
 		// Split the sentence
 		String[] array = speech.split(" ");
+		List<String> delivery_number = new ArrayList<String>();
 		
 		for (int i=0; i<array.length; i++)
 		{
-			if ("start".equals(array[0]))
+			if ("start".equals(array[i]))
 			{
 				System.out.println("SAPLEXA now Active!");
-			}else if ("delivery".equals(array[0])) 
-			{
-				//int j = 0;
-				if ("stop".equals(array[i]))
+			}else {
+				return;
+			}
+				
+				if ("delivery".equals(array[i])) 
 				{
-					System.out.println("SWAG");
-					List<String> delivery_number = new ArrayList<String>();
-					delivery_number.add(array[i]);
+					if ("one".equals(array[i]))
+					{
+						delivery_number.add(array[i]);
+						//System.out.println(delivery_number);
+					}else if ("two".equals(array[i]))
+					{
+						delivery_number.add(array[i]);
+						//System.out.println(delivery_number);
+					}else if ("three".equals(array[i]))
+					{
+						delivery_number.add(array[i]);
+						//System.out.println(delivery_number);
+					}else if ("four".equals(array[i]))
+					{
+						delivery_number.add(array[i]);
+						//System.out.println(delivery_number);
+					}else if ("five".equals(array[i]))
+					{
+						delivery_number.add(array[i]);
+						//System.out.println(delivery_number);
+					}else if ("six".equals(array[i]))
+					{
+						delivery_number.add(array[i]);
+						//System.out.println(delivery_number);
+					}else if ("seven".equals(array[i]))
+					{
+						delivery_number.add(array[i]);
+						//System.out.println(delivery_number);
+					}else if ("eight".equals(array[i]))
+					{
+						delivery_number.add(array[i]);
+						//System.out.println(delivery_number);
+					}else if ("nine".equals(array[i]))
+					{
+						delivery_number.add(array[i]);
+						//System.out.println(delivery_number);
+					}else if ("zero".equals(array[i]))
+					{
+						delivery_number.add(array[i]);
+						//System.out.println(delivery_number);
+					}
 					System.out.println(delivery_number);
-				}else
-				{
-					System.out.println("Hallo");
-				}
 				
 			}
 					
 		}
-		
+		String lastWord = array[0];
 		
 		
 	}

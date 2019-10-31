@@ -17,5 +17,5 @@ public <number> = ( zero | one | two | three | four | five | six | seven | nine 
 public <syntax> = <number>{1} (plus | minus | multiply | division){1} <number>{1};*/
 
 public <start> = ( SAPLEXA | start );
-public <commands> = ( delivery | status | show list | stop );
+public <commands> = ( delivery | status | show list );
 public <figures> = ( zero | one | two | three | four | five | six | seven | eight | nine | ten );
