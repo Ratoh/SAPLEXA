@@ -1,0 +1,10 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar 
+ */
+
+grammar grammar;
+public <start> = ( saplexa | start );
+public <commands> = ( start number | end number | positon | material | quantity | storage);
+public <figures> = ( zero | one | two | three | four | five | six | seven | eight | nine | ok );
