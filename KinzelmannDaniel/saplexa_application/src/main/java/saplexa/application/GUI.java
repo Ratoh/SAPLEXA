@@ -8,7 +8,7 @@ public class GUI {
 	private static final Color TEXT_WHITE = new Color(200,200,200);
 	private static final Color BG_DARK = new Color(30,30,30);
 	private static final Color BG_DARKER = new Color(20,20,20);
-	private static final boolean DarkMode = true;
+	private static final boolean DarkMode = false;
 	protected int width;
 	protected int height;
 	protected List Numbers = new List(5);
