@@ -11,19 +11,14 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
-		<attributes>
-			<attribute name="module" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/proga/OneDrive/Documents/GitHub/SAPLEXA/CavallaroAngelo/Z_SWT-Libraries/org.eclipse.swt.win32.win32.x86_64.source_3.106.2.v20171129-0543.jar"/>
-	<classpathentry kind="lib" path="C:/Users/proga/OneDrive/Documents/GitHub/SAPLEXA/CavallaroAngelo/Z_SWT-Libraries/org.eclipse.swt.win32.win32.x86_64_3.106.2.v20171129-0543.jar"/>
-	<classpathentry kind="lib" path="C:/Users/proga/OneDrive/Documents/GitHub/SAPLEXA/CavallaroAngelo/Z_SWT-Libraries/org.eclipse.swt_3.106.2.v20171129-0543.jar"/>
+	<classpathentry kind="lib" path="E:/SAPlexa Repository/SAPLEXA/Ressources/Z_SWT-Libraries/org.eclipse.swt.win32.win32.x86_64.source_3.106.2.v20171129-0543.jar"/>
+	<classpathentry kind="lib" path="E:/SAPlexa Repository/SAPLEXA/Ressources/Z_SWT-Libraries/org.eclipse.swt.win32.win32.x86_64_3.106.2.v20171129-0543.jar"/>
+	<classpathentry kind="lib" path="E:/SAPlexa Repository/SAPLEXA/Ressources/Z_SWT-Libraries/org.eclipse.swt_3.106.2.v20171129-0543.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
