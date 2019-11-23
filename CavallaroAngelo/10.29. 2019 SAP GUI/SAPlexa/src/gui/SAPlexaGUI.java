@@ -59,7 +59,6 @@ public class SAPlexaGUI {
 		
 		openFile= new MenuItem(openMenu, SWT.PUSH);
 		openFile.setText("Open File");
-		openFile.setToolTipText("Open a file");
 		
 	}
 	
