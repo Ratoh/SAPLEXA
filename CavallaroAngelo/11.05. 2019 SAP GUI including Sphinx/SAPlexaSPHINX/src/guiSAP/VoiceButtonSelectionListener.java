@@ -11,28 +11,28 @@ import org.eclipse.swt.widgets.Text;
 
 import sphinx.Sphinx;
 
- 
-public class VoiceButtonSelectionListener extends SelectionAdapter{
+public class VoiceButtonSelectionListener extends SelectionAdapter {
 
 	Display display;
 	Dialog dlg;
 	Shell dlgShell;
-	
+
 	Images img = new Images();
-	
+
 	public VoiceButtonSelectionListener(Display ds) {
+
 		this.display = ds;
-		
+
 	}
-	
-	public void widgetSelected(SelectionEvent e) { 
+
+	public void widgetSelected(SelectionEvent e) {
+
 		showDialog();
+
 	}
-	
-	
+
 	public void showDialog() {
-		
-		
+
 		dlgShell = new Shell(display);
 		dlgShell.setImage(img.SHELLICON(display));
 		dlgShell.setText("Voice Control SAPlexa");
@@ -41,6 +41,6 @@ public class VoiceButtonSelectionListener extends SelectionAdapter{
 		txt.setText("SPHINX Voice Control is booting... Please wait");
 		dlgShell.open();
 		new Sphinx(txt);
+
 	}
-	
 }
