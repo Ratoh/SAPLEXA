@@ -5,7 +5,7 @@ import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.*;
 
 public class SAPlexaGUI {
-
+	
 	Shell shell;
 	Display display;
 	
@@ -20,9 +20,9 @@ public class SAPlexaGUI {
 	MenuItem openFile;
 
 	Group buttonGroup;
-
+	
 	public SAPlexaGUI() {
-
+		
 		createDisplay();
 		createShell();
 		createImage();
