@@ -1,0 +1,14 @@
+import com.sap.conn.jco.*;
+
+
+public class ConnectTest {
+
+	public static void main(String[] args) throws JCoException {
+		// TODO Auto-generated method stub
+		JCoDestination d = JCoDestinationManager.getDestination("ConProperties");
+		d.ping();
+		System.out.println("Attributes: " + "\n\n" + d.getAttributes());
+
+	}
+
+}

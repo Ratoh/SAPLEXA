@@ -1,0 +1,71 @@
+import java.util.ArrayList;
+
+package org.eclipse.paho.client.mqttv3;
+
+import org.eclipse.paho.client.mqttv3.MqttClient;
+import org.eclipse.paho.client.mqttv3.MqttException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class Test {
+
+	
+	private static final Logger LOG = LoggerFactory.getLogger(FlugClient.class);
+	 
+	/** Die URI des Servers der abgefragt wird. */
+	private static final String SERVER_URI = "tcp://test.mosquitto.org";
+ 
+	/** Der Topic auf den die Flugdaten ankommen. */
+	private static final String TOPIC1 = "/Anzahl/Flugzeuge/Hannover";
+	private static final String TOPIC2 = "presence";	
+ 
+	public static void main(String[] args) throws Exception {
+ 
+	/*	// Initialisieren und Testen der Verbindung
+		JCoDestination d = JCoDestinationManager.getDestination("ConProperties");
+		d.ping();
+		System.out.println("Attributes: " + "\n\n" + d.getAttributes());
+
+
+		JCoRepository repository = d.getRepository();
+		JCoFunction function = repository.getFunction("Z_NEXTOP_BYORDER1");		
+ 
+		JCoParameterList input = function.getImportParameterList(); 
+
+		input.setValue("I_AUFNR","000001000157");		
+		 
+		// Funktion aufrufen
+		function.execute(d);
+		  
+		JCoParameterList valuelist = function.getExportParameterList();
+
+		System.out.println(valuelist.getValue("E_VORNR"));
+		System.out.println(valuelist.getValue("E_TEMP"));
+		System.out.println(valuelist.getValue("E_DAUER"));
+		System.out.println(valuelist.getValue("E_SWITCH1"));
+		System.out.println(valuelist.getValue("E_SWITCH2"));
+		System.out.println(valuelist.getValue("E_DESCRIPTION")); */
+		
+		startClientEndlos();
+	}
+ 
+	private static void startClientEndlos() throws MqttException {
+ 
+		LOG.info("Starte MQTT Flug Client ...");		
+ 
+		MqttClient client = new MqttClient(SERVER_URI, generateClientId());
+ 
+		client.setCallback(new LogCallback());
+ 
+		client.connect();
+ 
+		client.subscribe(TOPIC2);
+	}
+ 
+	private static String generateClientId() {
+		return UUID.randomUUID().toString();
+	}
+}	
+	
+	
+}
