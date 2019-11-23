@@ -15,6 +15,8 @@ public class BackDeliveryListener extends SelectionAdapter {
 	Label label;
 	List list;
 	Button confirmButton;
+	
+	boolean selectiveBoolean = false; 
 
 	public BackDeliveryListener(Display display) {
 
@@ -71,6 +73,22 @@ public class BackDeliveryListener extends SelectionAdapter {
 		list.add("Menge nicht vollständig");
 		list.add("falscher Lagerort");
 		list.add("Sonstiges");
+		list.addSelectionListener(new SelectionListener() {
+			
+			
+			
+			@Override
+			public void widgetDefaultSelected(SelectionEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void widgetSelected(SelectionEvent arg0) {
+
+				selectiveBoolean = true;
+							}
+		});
 
 	}
 
@@ -82,7 +100,9 @@ public class BackDeliveryListener extends SelectionAdapter {
 		confirmButton.setFont(new Font(display, "Calibri", 15, SWT.BOLD));
 
 		confirmButton.addSelectionListener(new SelectionListener() {
-
+			
+			
+			
 			@Override
 			public void widgetDefaultSelected(SelectionEvent arg0) {
 				// TODO Auto-generated method stub
@@ -96,11 +116,16 @@ public class BackDeliveryListener extends SelectionAdapter {
 				msgb.setText("Information");
 
 				// bricht ab wenn nichts selektiert wurde
-				msgb.setMessage("Im System gespeichert: \n \n" + list.getItem(list.getSelectionIndex()));
-				msgb.open();
+				if (selectiveBoolean) {
+					msgb.setMessage("Im System gespeichert: \n \n" + list.getItem(list.getSelectionIndex()));
+					msgb.open();
 
-				listShell.dispose();
-			}
+					listShell.dispose();
+				}
+
+					
+	
+							}
 		});
 	}
 }
