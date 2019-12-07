@@ -1,0 +1,240 @@
+
+**** Error file opened at 20170513 155121 Central European Summer Time Rel 3.0.10 (2013-08-08) [720.440]
+Error:  >Sat May 13 15:51:21,378<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=m95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (87.164.210.89 to
+            m95z.2.ucc.md, 3395)
+TIME        Sat May 13 15:51:21 2017
+RELEASE     745
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     46206
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20180506 113905 Central European Summer Time Rel 3.0.10 (2013-08-08) [720.440]
+Error:  >Sun May 06 11:39:05,365<    >RfcGetException rc (7) message: Name oder Kennwort ist nicht korrekt (Wiederholen Sie die Anmeldung)
+<RfcGetException
+
+
+**** Error file opened at 20180506 114603 Central European Summer Time Rel 3.0.10 (2013-08-08) [720.440]
+Error:  >Sun May 06 11:46:03,793<    >RfcGetException rc (7) message: Name oder Kennwort ist nicht korrekt (Wiederholen Sie die Anmeldung)
+<RfcGetException
+
+
+**** Error file opened at 20180506 121713 Central European Summer Time Rel 3.0.10 (2013-08-08) [720.440]
+Error:  >Sun May 06 12:17:13,581<    >RfcGetException rc (21) message:      Dynproausgabe ohne Verbindung zum Benutzer                          
+<RfcGetException
+
+Error: [1] >Sun May 06 12:17:13,615<    RfcException: [M95|m95z]
+    message:      Dynproausgabe ohne Verbindung zum Benutzer                          
+    Return code: RFC_SYS_EXCEPTION(3)
+    error group: 104
+    key: RFC_ERROR_SYSTEM_FAILURE
+Exception raised by M95|m95z
+
+
+**** Error file opened at 20190512 170201 Central European Summer Time Rel 3.0.10 (2013-08-08) [720.440]
+Error:  >Sun May 12 17:02:01,612<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (46.86.0.233 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun May 12 17:02:02 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     299218
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20190513 105354 Central European Summer Time Rel 3.0.10 (2013-08-08) [720.440]
+Error:  >Mon May 13 10:53:54,276<    >RfcGetException rc (7) message: Name oder Kennwort ist nicht korrekt (Wiederholen Sie die Anmeldung)
+<RfcGetException
+
+
+**** Error file opened at 20191203 120033 Central European Standard Time Rel 3.0.10 (2013-08-08) [720.440]
+Error:  >Tue Dec 03 12:00:33,650<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname 'cloud.ucc.ovgu.de' unknown
+TIME        Tue Dec 03 12:00:33 2019
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      ninti.c
+LINE        895
+DETAIL      NiPGetHostByName: 'cloud.ucc.ovgu.de' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20191203 171730 Central European Standard Time Rel 3.0.10 (2013-08-08) [720.440]
+Error:  >Tue Dec 03 17:17:30,408<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '141.44.38.2:3299' not reached
+TIME        Tue Dec 03 17:17:30 2019
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3286
+DETAIL      NiPConnect2: 141.44.38.2:3299
+SYSTEM CALL connect
+ERRNO       10013
+ERRNO TEXT  WSAEACCES: Permission denied
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20191203 171744 Central European Standard Time Rel 3.0.10 (2013-08-08) [720.440]
+Error:  >Tue Dec 03 17:17:44,150<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '141.44.38.2:3299' not reached
+TIME        Tue Dec 03 17:17:44 2019
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3286
+DETAIL      NiPConnect2: 141.44.38.2:3299
+SYSTEM CALL connect
+ERRNO       10013
+ERRNO TEXT  WSAEACCES: Permission denied
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20191203 171752 Central European Standard Time Rel 3.0.10 (2013-08-08) [720.440]
+Error:  >Tue Dec 03 17:17:52,934<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '141.44.38.2:3299' not reached
+TIME        Tue Dec 03 17:17:52 2019
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3286
+DETAIL      NiPConnect2: 141.44.38.2:3299
+SYSTEM CALL connect
+ERRNO       10013
+ERRNO TEXT  WSAEACCES: Permission denied
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20191203 171800 Central European Standard Time Rel 3.0.10 (2013-08-08) [720.440]
+Error:  >Tue Dec 03 17:18:00,585<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '141.44.38.2:3299' not reached
+TIME        Tue Dec 03 17:18:00 2019
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3286
+DETAIL      NiPConnect2: 141.44.38.2:3299
+SYSTEM CALL connect
+ERRNO       10013
+ERRNO TEXT  WSAEACCES: Permission denied
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20191203 172501 Central European Standard Time Rel 3.0.10 (2013-08-08) [720.440]
+Error:  >Tue Dec 03 17:25:01,912<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '141.44.38.2:3299' not reached
+TIME        Tue Dec 03 17:25:01 2019
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3286
+DETAIL      NiPConnect2: 141.44.38.2:3299
+SYSTEM CALL connect
+ERRNO       10013
+ERRNO TEXT  WSAEACCES: Permission denied
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20191203 182022 Central European Standard Time Rel 3.0.10 (2013-08-08) [720.440]
+Error:  >Tue Dec 03 18:20:22,847<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '141.44.38.2:3299' not reached
+TIME        Tue Dec 03 18:20:22 2019
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3286
+DETAIL      NiPConnect2: 141.44.38.2:3299
+SYSTEM CALL connect
+ERRNO       10013
+ERRNO TEXT  WSAEACCES: Permission denied
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
