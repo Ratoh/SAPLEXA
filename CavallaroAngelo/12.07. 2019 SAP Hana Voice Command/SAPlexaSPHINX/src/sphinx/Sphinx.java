@@ -419,7 +419,7 @@ public class Sphinx {
 	}
 
 	private void openPickOutMonitor() {
-		
+		// Implementation for opening the PickOutMonitor
 	}
 
 	public String getNumber() {

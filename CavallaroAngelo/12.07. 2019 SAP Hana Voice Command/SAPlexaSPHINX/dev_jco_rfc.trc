@@ -238,3 +238,1013 @@ COUNTER     2
     error group: 102
     key: RFC_ERROR_COMMUNICATION
 
+
+**** Error file opened at 20191208 173406 Central European Standard Time Rel 3.0.10 (2013-08-08) [720.440]
+Error:  >Sun Dec 08 17:34:06,946<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:04 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049763
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:09,257<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:07 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049765
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:10,623<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:08 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049767
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:14,035<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:11 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049770
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:15,223<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:13 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049772
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:18,409<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:16 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049775
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:21,544<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:19 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049777
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:22,678<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:20 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049779
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:24,930<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:22 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049781
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:28,272<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:26 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049783
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:30,112<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:27 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049785
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:30,855<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:28 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049787
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:31,434<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:29 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049789
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:32,964<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:30 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049791
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:34,859<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:32 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049793
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:36,473<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:34 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049802
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:39,547<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:37 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049804
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:45,509<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:43 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049814
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:46,737<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:44 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049816
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:49,474<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:47 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049820
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:50,927<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:48 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049822
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:51,694<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:49 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049824
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:54,442<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:52 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049827
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:55,848<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:53 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049829
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:56,621<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:54 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049831
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:34:59,269<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:57 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049837
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:00,259<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:58 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049839
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:01,586<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:34:59 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049841
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:04,263<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:02 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049845
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:06,469<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:04 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049848
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:09,234<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:07 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049850
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:10,052<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:07 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049852
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:11,535<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:09 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049854
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:14,122<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:11 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049857
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:15,314<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:13 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049859
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:18,975<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:16 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049861
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:21,728<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:19 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049863
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:23,876<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:21 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049865
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:28,706<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:26 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049867
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:32,383<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:30 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049871
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:34,743<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:32 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049876
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:38,583<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:36 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049887
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:39,541<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:37 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049891
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:40,668<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:38 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049893
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:42,920<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:40 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049895
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:44,830<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:42 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049897
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:48,344<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:46 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049899
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:49,357<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:47 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049901
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:53,177<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:50 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049904
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:54,238<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:52 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1049906
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:58,189<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:55 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1050789
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:59,046<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:56 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1050791
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:35:59,476<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:57 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1050793
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:36:00,617<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:35:58 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1050795
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:36:03,142<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:36:00 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1050797
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+Error:  >Sun Dec 08 17:36:04,279<    RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ConProperties ASHOST=a95z.2.ucc.md SYSNR=95 SAPROUTER=/H/cloud.ucc.ovgu.de/S/3299 PCS=1
+
+LOCATION    SAProuter 40.4 on 'accesscluster'
+ERROR       accesscluster: route permission denied (92.73.29.84 to
+            a95z.2.ucc.md, 3395)
+TIME        Sun Dec  8 17:36:02 2019
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -94
+COUNTER     1050799
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
