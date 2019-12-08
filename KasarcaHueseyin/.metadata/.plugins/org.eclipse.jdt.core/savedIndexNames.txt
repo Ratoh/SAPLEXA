@@ -1,0 +1,9 @@
+INDEX VERSION 1.131+C:\Users\hkasa\Desktop\KasarcaHueseyin\.metadata\.plugins\org.eclipse.jdt.core
+53138410.index
+3366684661.index
+3687515935.index
+2895018832.index
+55013499.index
+2550027583.index
+3530140739.index
+128088954.index
