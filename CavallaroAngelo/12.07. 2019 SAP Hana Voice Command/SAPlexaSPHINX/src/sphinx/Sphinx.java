@@ -30,6 +30,7 @@ import edu.cmu.sphinx.api.SpeechResult;
 import edu.cmu.sphinx.result.WordResult;
 import guiSAP.ButtonPickOutListener;
 import guiSAP.SAPLEXAGUI;
+import guiSAP.ViewOrderDetails;
 import javaConnector.Order;
 import javaConnector.SAPConnection;
 
@@ -311,6 +312,9 @@ public class Sphinx {
 			if (listenbool) {
 				resultString += "0";
 			}
+			else if (selectOrderNow) {
+				selectedOrderID += "0";
+			}
 			break;
 		case "hana": {
 			resultString = "";
@@ -323,7 +327,7 @@ public class Sphinx {
 			if (listenbool) {
 				resultString += "1";
 			}
-			if (selectOrderNow) {
+			else if (selectOrderNow) {
 				selectedOrderID += "1";
 			}
 			break;
@@ -331,7 +335,7 @@ public class Sphinx {
 			if (listenbool) {
 				resultString += "2";
 			}
-			if (selectOrderNow) {
+			else if (selectOrderNow) {
 				selectedOrderID += "2";
 			}
 			break;
@@ -339,7 +343,7 @@ public class Sphinx {
 			if (listenbool) {
 				resultString += "3";
 			}
-			if (selectOrderNow) {
+			else if (selectOrderNow) {
 				selectedOrderID += "3";
 			}
 			break;
@@ -347,7 +351,7 @@ public class Sphinx {
 			if (listenbool) {
 				resultString += "4";
 			}
-			if (selectOrderNow) {
+			else if (selectOrderNow) {
 				selectedOrderID += "4";
 			}
 			break;
@@ -355,7 +359,7 @@ public class Sphinx {
 			if (listenbool) {
 				resultString += "5";
 			}
-			if (selectOrderNow) {
+			else if (selectOrderNow) {
 				selectedOrderID += "5";
 			}
 			break;
@@ -363,7 +367,7 @@ public class Sphinx {
 			if (listenbool) {
 				resultString += "6";
 			}
-			if (selectOrderNow) {
+			else if (selectOrderNow) {
 				selectedOrderID += "6";
 			}
 			break;
@@ -371,7 +375,7 @@ public class Sphinx {
 			if (listenbool) {
 				resultString += "7";
 			}
-			if (selectOrderNow) {
+			else if (selectOrderNow) {
 				selectedOrderID += "7";
 			}
 			break;
@@ -379,7 +383,7 @@ public class Sphinx {
 			if (listenbool) {
 				resultString += "8";
 			}
-			if (selectOrderNow) {
+			else if (selectOrderNow) {
 				selectedOrderID += "8";
 			}
 			break;
@@ -387,7 +391,7 @@ public class Sphinx {
 			if (listenbool) {
 				resultString += "9";
 			}
-			if (selectOrderNow) {
+			else if (selectOrderNow) {
 				selectedOrderID += "9";
 			}
 			break;
@@ -397,7 +401,7 @@ public class Sphinx {
 				selectOrderNow = false;
 				openPickOutMonitor();
 			}
-			if (list.size() != 0) {
+			else if (list.size() > 0) {
 				selectOrderNow= true;
 			}
 			System.out.println(resultString);
@@ -406,7 +410,7 @@ public class Sphinx {
 		case "select": {
 			listenbool = false;
 			selectOrderNow = true;
-
+			selectedOrderID = "";
 		}
 			break;
 
@@ -419,7 +423,19 @@ public class Sphinx {
 	}
 
 	private void openPickOutMonitor() {
-		// Implementation for opening the PickOutMonitor
+		// Implementation for opening the ViewOrderDetails
+		Display.getDefault().syncExec(new Runnable() {
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				ViewOrderDetails vod = new ViewOrderDetails(ordertable.getDisplay());
+				System.out.println("Selected order id : " +selectedOrderID);
+				vod.open((Order) list.toArray()[Integer.parseInt(selectedOrderID)]  );
+			}}); 
+			
+		
+		
 	}
 
 	public String getNumber() {
