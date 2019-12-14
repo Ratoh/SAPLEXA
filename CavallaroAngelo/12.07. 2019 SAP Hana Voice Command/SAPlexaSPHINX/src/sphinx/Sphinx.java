@@ -14,6 +14,7 @@ import javax.sound.sampled.Port;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Font;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Display;
@@ -37,9 +38,10 @@ import javaConnector.SAPConnection;
 public class Sphinx {
 
 	Text sphinxlabel;
-	Text orderid;
+	Text orderid, statusSAPIndicator;
 	Table ordertable;
 	Button pickoutButton;
+	static Color statusColor;
 
 	private Collection<Order> list = new ArrayList<>();
 	private String resultString = "";
@@ -96,8 +98,9 @@ public class Sphinx {
 	 * Constructor
 	 */
 
-	public Sphinx(Text t, Text t2, Table tab) {
+	public Sphinx(Text t, Text t2, Text statusSAP, Table tab) {
 		
+		this.statusSAPIndicator = statusSAP;
 		this.sphinxlabel = t;
 		this.orderid = t2;
 		this.ordertable = tab;
@@ -210,9 +213,10 @@ public class Sphinx {
 												sphinxlabel.setText("SAP is listening ...");	
 											}
 											else {
-												sphinxlabel.setText("Say \"Select\" to choose your order!");
-											}
+												//sphinxlabel.setText("Say \"Select\" to choose your order!");
+												}
 											orderid.setText("*" + resultString + "*");
+											statusSAPIndicator.setText(Sphinx.getSAPlexaStatus(listenbool, selectOrderNow));
 											try {
 												getProposals(resultString);
 											} catch (JCoException e) {
@@ -401,8 +405,13 @@ public class Sphinx {
 				selectOrderNow = false;
 				openPickOutMonitor();
 			}
-			else if (list.size() > 0) {
+			else if (list.size() > 1) {
 				selectOrderNow= true;
+			}
+			else if (list.size() == 1) {
+				selectOrderNow= false;
+				selectedOrderID = "0";
+				openPickOutMonitor();
 			}
 			System.out.println(resultString);
 		}
@@ -466,6 +475,20 @@ public class Sphinx {
 		writeTableData(list);
 
 	}
+	
+	
+	public static String getSAPlexaStatus(boolean listen, boolean selectOrder) {
+		if (listen) {
+			
+			return "Now, tell Hana your order id and confirm with OKAY.";
+		}
+		else if (selectOrder) {
+			return "Now, say SELECT and choose your entry. Confirm with OKAY.";
+		}
+		else
+			return "Say \"HANA\" for initiating the voice command.";
+		
+	}
 
 	public void writeTableData(Collection<Order> list) {
 		int idx = 0;
@@ -483,7 +506,7 @@ public class Sphinx {
 				item.setText(3, o.getOrderDate().toString());
 
 				item.setFont(new Font(ordertable.getDisplay(), "Calibri", 18, SWT.NONE));
-				System.out.println("TABLE ENTRY " + o);
+		
 
 				idx++;
 
@@ -510,6 +533,7 @@ public class Sphinx {
 			item.setFont(new Font(ordertable.getDisplay(), "Calibri", 18, SWT.NONE));
 
 		}
+		
 
 	}
 

@@ -6,5 +6,5 @@
 
 grammar grammar;
 
-public <commands> = ( hana | okay | select | end | continue | back );
+public <commands> = ( hana | okay | select  );
 public <figures> = ( zero | one | two | three | four | five | six | seven | eight | nine );
