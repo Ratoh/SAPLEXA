@@ -7,13 +7,15 @@ import org.eclipse.swt.graphics.*;
 import org.eclipse.swt.layout.*;
 import org.eclipse.swt.widgets.*;
 
-public class ButtonSeeDetailsListener extends SelectionAdapter {
+import javaConnector.Order;
+
+public class ViewOrderDetails {
 
 	Display display;
 	Shell btnOkShell;
-
+	
 	Images img = new Images();
-
+	
 	Group overview;
 	Group transactionInfoGroup;
 	Group distributor;
@@ -34,38 +36,45 @@ public class ButtonSeeDetailsListener extends SelectionAdapter {
 
 	Table table;
 	Text text;
-
-	public ButtonSeeDetailsListener(Display display) {
-
+	
+	private Order order;
+	
+	
+	public ViewOrderDetails (Display display) {
+		
 		this.display = display;
-
+		
 	}
-
-	public void widgetSelected(SelectionEvent e) {
-
+	
+	public void open(Order selectedOrder) {
+		this.order = selectedOrder;
 		createContents();
-
+		
+		
+		
 	}
-
+	
 	public void createContents() {
-
+		
 		btnOkShell = new Shell();
 		GridLayout grid = new GridLayout(1, true);
 		btnOkShell.setLayout(grid);
 		btnOkShell.setImage(img.SHELLICON(display));
 		btnOkShell.setText("SAPLEXA");
-
+		
+		
 		createGroup();
 		createTable();
 		createButtons();
-
+	
 		btnOkShell.pack();
 		btnOkShell.open();
-
+		btnOkShell.setFullScreen(true);
+		
 	}
-
+	
 	public void createGroup() {
-
+		
 		overview = new Group(btnOkShell, SWT.SHADOW_ETCHED_IN);
 		overview.setLayout(new GridLayout(2, true));
 		overview.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true));
@@ -81,14 +90,14 @@ public class ButtonSeeDetailsListener extends SelectionAdapter {
 		labelReceiptNumber.setText("Receipt ID");
 
 		receiptNumber = new Text(transactionInfoGroup, SWT.NONE);
-		receiptNumber.setText("<Belegnummer>");
+		receiptNumber.setText(order.getOrderID());
 		receiptNumber.setFont(new Font(display, "Calibri", 26, SWT.NONE));
 		receiptNumber.setEditable(false);
 
 		labelIssuedDate = new Label(transactionInfoGroup, SWT.NONE);
 		labelIssuedDate.setText("Issued on");
 		issuedDate = new Text(transactionInfoGroup, SWT.NONE);
-		issuedDate.setText("<Belegdatum>");
+		issuedDate.setText(order.getOrderDate().toString());
 		issuedDate.setFont(new Font(display, "Calibri", 26, SWT.NONE));
 		issuedDate.setEditable(false);
 
@@ -110,14 +119,13 @@ public class ButtonSeeDetailsListener extends SelectionAdapter {
 		distributorIDPlate.setText("Distributor ID");
 
 		distributorID = new Text(distributor, SWT.NONE);
-		distributorID.setText("<Lieferantennummer>");
+		distributorID.setText(order.getDistributorID());
 		distributorID.setFont(new Font(display, "Calibri", 26, SWT.NONE));
 		distributorID.setEditable(false);
 
 	}
-
+	
 	public void createTable() {
-		
 		table = new Table(overview, SWT.CHECK | SWT.BORDER | SWT.V_SCROLL | SWT.H_SCROLL | SWT.FULL_SELECTION);
 		table.setHeaderVisible(true);
 		table.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 2, 1));
@@ -130,17 +138,12 @@ public class ButtonSeeDetailsListener extends SelectionAdapter {
 			TableColumn column = new TableColumn(table, SWT.NONE);
 			column.setText(columns[loopIndex]);
 			column.setMoveable(true);
-			column.setWidth(270);
 			//column.setWidth((btnOkShell.getSize().x - 50) / columns.length);
+			column.setWidth(270);
 			column.setResizable(true);
-//			column.addListener(SWT.RESIZE, new Listener() {
-//				@Override
-//				public void handleEvent(Event event) {
-//					table.setFont(new Font(display, "Calibri", 19, SWT.NONE));
-//				}
-//			});
 
 		}
+
 
 		for (int i = 0; i < 6; i++) {
 			new TableItem(table, SWT.NONE);
@@ -239,7 +242,7 @@ public class ButtonSeeDetailsListener extends SelectionAdapter {
 		labelSelectedRows.setText("Selektiert wurden: \n");
 		labelSelectedRows.setFont(new Font(display, "Arial", 19, SWT.BOLD));
 		labelSelectedRows.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));
-
+		
 		callVorgesetzten = new Button(overview, SWT.PUSH);
 		callVorgesetzten.setText("Vorgesetzten anrufen");
 		callVorgesetzten.setLayoutData(new GridData(SWT.RIGHT, SWT.RIGHT, false, false, 1, 1));
@@ -249,10 +252,10 @@ public class ButtonSeeDetailsListener extends SelectionAdapter {
 				MessageBox box = new MessageBox(btnOkShell, SWT.OK | SWT.CANCEL | SWT.ICON_QUESTION);
 				box.setText("SAPLEXA");
 				box.setMessage("Call Max Mustermann");
-
+				
 				int answer = box.open();
-				switch (answer) {
-				case SWT.OK:
+				switch(answer) {
+				case SWT.OK: 
 					System.out.print("Calling...");
 					break;
 				case SWT.CANCEL:
@@ -267,7 +270,7 @@ public class ButtonSeeDetailsListener extends SelectionAdapter {
 		showSelectedRows.setFont(new Font(display, "Arial", 18, SWT.BOLD));
 		showSelectedRows.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));
 		showSelectedRows.addSelectionListener(new BookingListener(table, labelSelectedRows));
-
+		
 		backDeliveryButton = new Button(overview, SWT.PUSH);
 		backDeliveryButton.setText("Mark as error due to...");
 		backDeliveryButton.setForeground(new Color(display, 255, 0, 0));

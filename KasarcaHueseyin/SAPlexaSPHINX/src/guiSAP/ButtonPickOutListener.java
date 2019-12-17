@@ -6,10 +6,13 @@ import org.eclipse.swt.graphics.*;
 import org.eclipse.swt.layout.*;
 import org.eclipse.swt.widgets.*;
 
+import javaConnector.Order;
+
 public class ButtonPickOutListener extends SelectionAdapter {
 
 	Display display;
 	Shell btnPickShell;
+	Order selectedOrder;
 	
 	Images img = new Images();
 	
@@ -17,6 +20,8 @@ public class ButtonPickOutListener extends SelectionAdapter {
 	Label labelReceiptNumber, labelDistributor, labelReceiptDate, labelBookingDate, distributorIDPlate;
 	Text receiptNumber, distributorName, receiptDate, bookingDate, distributorID;
 	Button btnSeeDetails, btnReturn;
+	
+	
 	
 	public ButtonPickOutListener(Display display) {
 	
@@ -27,6 +32,12 @@ public class ButtonPickOutListener extends SelectionAdapter {
 		
 		createContents();
 		
+		
+	}
+	
+	public void widgetSelected(Display dsp, Order ord) {
+		this.display = dsp;
+		createContents();
 	}
 	
 	public void createContents() {

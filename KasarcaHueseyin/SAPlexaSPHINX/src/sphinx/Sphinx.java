@@ -1,6 +1,8 @@
 package sphinx;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -10,18 +12,43 @@ import java.util.logging.Logger;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Port;
 
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.graphics.Color;
+import org.eclipse.swt.graphics.Font;
+import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Event;
+import org.eclipse.swt.widgets.Table;
+import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.swt.widgets.Text;
+
+import com.sap.conn.jco.JCoException;
 
 import edu.cmu.sphinx.api.Configuration;
 import edu.cmu.sphinx.api.LiveSpeechRecognizer;
 import edu.cmu.sphinx.api.SpeechResult;
 import edu.cmu.sphinx.result.WordResult;
+import guiSAP.ButtonPickOutListener;
+import guiSAP.SAPLEXAGUI;
+import guiSAP.ViewOrderDetails;
+import javaConnector.Order;
+import javaConnector.SAPConnection;
 
 public class Sphinx {
 
-	Text text;
-	Text text2;
+	Text sphinxlabel;
+	Text orderid, statusSAPIndicator;
+	Table ordertable;
+	Button pickoutButton;
+	static Color statusColor;
+
+	private Collection<Order> list = new ArrayList<>();
+	private String resultString = "";
+	private String selectedOrderID = "";
+	private boolean selectOrderNow = false;
+	private boolean listenbool = false;
+
 	// Necessary
 	private LiveSpeechRecognizer recognizer;
 
@@ -32,7 +59,7 @@ public class Sphinx {
 	 * This String contains the Result that is coming back from SpeechRecognizer
 	 */
 	private String speechRecognitionResult;
-	public String number = "";
+	// public String number = "";
 	public boolean recordNumber = false;
 
 	// -----------------Lock Variables-----------------------------
@@ -70,11 +97,15 @@ public class Sphinx {
 	/**
 	 * Constructor
 	 */
-	public Sphinx(Text t, Text t2) {
 
-		this.text = t;
-		this.text2 = t2;
-		text.setText("SPHINX started");
+	public Sphinx(Text t, Text t2, Text statusSAP, Table tab) {
+		
+		this.statusSAPIndicator = statusSAP;
+		this.sphinxlabel = t;
+		this.orderid = t2;
+		this.ordertable = tab;
+		sphinxlabel.setText("Say \"Hana\" to enter an order id");
+
 		// Loading Message
 		logger.log(Level.INFO, "Loading Speech Recognizer...\n");
 
@@ -122,7 +153,7 @@ public class Sphinx {
 	}
 
 	public Sphinx() {
-		
+
 	}
 	// -----------------------------------------------------------------------------------------------
 
@@ -147,11 +178,10 @@ public class Sphinx {
 
 				// Information
 				logger.log(Level.INFO, "You can start to speak...\n");
-				
 
 				try {
 					while (speechRecognizerThreadRunning) {
-						
+
 						/*
 						 * This method will return when the end of speech is reached. Note that the end
 						 * pointer will determine the end of speech.
@@ -170,16 +200,36 @@ public class Sphinx {
 
 								// You said?
 								System.out.println("You said: [" + speechRecognitionResult + "]\n");
-								
+
 								// Call the appropriate method
 								makeDecision(speechRecognitionResult, speechResult.getWords());
-								Display.getDefault().syncExec(new Runnable() {
-									public void run() {
-										text.setText(speechRecognitionResult);
-										text2.setText(number);
+
+								if (listenbool || selectOrderNow) {
+
+									Display.getDefault().syncExec(new Runnable() {
+										public void run() {
+											
+											if (selectOrderNow == false) {
+												sphinxlabel.setText("SAP is listening ...");	
+											}
+											else {
+												//sphinxlabel.setText("Say \"Select\" to choose your order!");
+												}
+											orderid.setText("*" + resultString + "*");
+											statusSAPIndicator.setText(Sphinx.getSAPlexaStatus(listenbool, selectOrderNow));
+											try {
+												getProposals(resultString);
+											} catch (JCoException e) {
+												// TODO Auto-generated catch block
+												e.printStackTrace();
+											}
+
+										}
+
 									}
-									
-								});
+
+									);
+								}
 
 							}
 						} else
@@ -195,8 +245,6 @@ public class Sphinx {
 
 			});
 	}
-
-
 
 	/**
 	 * Stops ignoring the results of SpeechRecognition
@@ -265,97 +313,228 @@ public class Sphinx {
 
 		switch (speech) {
 		case "zero":
-			if (recordNumber) {
-				number += "0";				
-				}
+			if (listenbool) {
+				resultString += "0";
+			}
+			else if (selectOrderNow) {
+				selectedOrderID += "0";
+			}
 			break;
+		case "hana": {
+			resultString = "";
+			listenbool = true;
+			resultString = "";
+			break;
+		}
+
 		case "one":
-			if (recordNumber) {
-				number += "1";
+			if (listenbool) {
+				resultString += "1";
+			}
+			else if (selectOrderNow) {
+				selectedOrderID += "1";
 			}
 			break;
 		case "two":
-			if (recordNumber) {
-				number += "2";
+			if (listenbool) {
+				resultString += "2";
+			}
+			else if (selectOrderNow) {
+				selectedOrderID += "2";
 			}
 			break;
 		case "three":
-			if (recordNumber) {
-				number += "3";
+			if (listenbool) {
+				resultString += "3";
+			}
+			else if (selectOrderNow) {
+				selectedOrderID += "3";
 			}
 			break;
 		case "four":
-			if (recordNumber) {
-				number += "4";
+			if (listenbool) {
+				resultString += "4";
+			}
+			else if (selectOrderNow) {
+				selectedOrderID += "4";
 			}
 			break;
 		case "five":
-			if (recordNumber) {
-				number += "5";
+			if (listenbool) {
+				resultString += "5";
+			}
+			else if (selectOrderNow) {
+				selectedOrderID += "5";
 			}
 			break;
 		case "six":
-			if (recordNumber) {
-				number += "6";
+			if (listenbool) {
+				resultString += "6";
+			}
+			else if (selectOrderNow) {
+				selectedOrderID += "6";
 			}
 			break;
 		case "seven":
-			if (recordNumber) {
-				number += "7";
+			if (listenbool) {
+				resultString += "7";
+			}
+			else if (selectOrderNow) {
+				selectedOrderID += "7";
 			}
 			break;
 		case "eight":
-			if (recordNumber) {
-				number += "8";
+			if (listenbool) {
+				resultString += "8";
+			}
+			else if (selectOrderNow) {
+				selectedOrderID += "8";
 			}
 			break;
 		case "nine":
-			if (recordNumber) {
-				number += "9";
+			if (listenbool) {
+				resultString += "9";
+			}
+			else if (selectOrderNow) {
+				selectedOrderID += "9";
 			}
 			break;
-		case "start": {
-			number = "";
-			recordNumber = true;
-			break;
+		case "okay": {
+			listenbool = false;
+			if (selectOrderNow) {
+				selectOrderNow = false;
+				openPickOutMonitor();
+			}
+			else if (list.size() > 1) {
+				selectOrderNow= true;
+			}
+			else if (list.size() == 1) {
+				selectOrderNow= false;
+				selectedOrderID = "0";
+				openPickOutMonitor();
+			}
+			System.out.println(resultString);
 		}
-		case "end": {
-			recordNumber = false;
-			System.out.println("Number is:" + number);
+			break;
+		case "select": {
+			listenbool = false;
+			selectOrderNow = true;
+			selectedOrderID = "";
 		}
 			break;
-		case "continue": {
-			System.out.println("continue process");
-		}
-			break;
-		case "back": {
-			System.out.println("go back");
-		}
-			break;
+
 		default:
 			System.out.println("DEFAULT CASE");
 		}
+
+		System.out.println("RESULT STRING : " + resultString);
+
+	}
+
+	private void openPickOutMonitor() {
+		// Implementation for opening the ViewOrderDetails
+		Display.getDefault().syncExec(new Runnable() {
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				ViewOrderDetails vod = new ViewOrderDetails(ordertable.getDisplay());
+				System.out.println("Selected order id : " +selectedOrderID);
+				vod.open((Order) list.toArray()[Integer.parseInt(selectedOrderID)]  );
+			}}); 
+			
+		
 		
 	}
 
 	public String getNumber() {
-		return number;
+		return resultString;
 	}
-	
+
 	public boolean getRecordNumber() {
-		if (recordNumber == false) {
+		if (listenbool == false) {
 			return true;
 		} else {
-		return true;
+			return true;
 		}
 	}
-	
+
 	public boolean getIgnoreSpeechRecognitionResults() {
 		return ignoreSpeechRecognitionResults;
 	}
 
 	public boolean getSpeechRecognizerThreadRunning() {
 		return speechRecognizerThreadRunning;
+	}
+
+	public void getProposals(String prfx) throws JCoException {
+		SAPConnection sapConnect = new SAPConnection();
+		// Sends spelled prefix to SAP Function Module
+		list.clear();
+		list = sapConnect.getProposalList(prfx);
+		writeTableData(list);
+
+	}
+	
+	
+	public static String getSAPlexaStatus(boolean listen, boolean selectOrder) {
+		if (listen) {
+			
+			return "Now, tell Hana your order id and confirm with OKAY.";
+		}
+		else if (selectOrder) {
+			return "Now, say SELECT and choose your entry. Confirm with OKAY.";
+		}
+		else
+			return "Say \"HANA\" for initiating the voice command.";
+		
+	}
+
+	public void writeTableData(Collection<Order> list) {
+		int idx = 0;
+		if (list.size() < 50) {
+			ordertable.setItemCount(0);
+			ordertable.clearAll();
+
+			for (Order o : list) {
+
+				TableItem item = new TableItem(ordertable, SWT.NULL);
+				item.setText("Item " + idx);
+				item.setText(0, "" + idx);
+				item.setText(1, o.getOrderID());
+				item.setText(2, o.getDistributorID());
+				item.setText(3, o.getOrderDate().toString());
+
+				item.setFont(new Font(ordertable.getDisplay(), "Calibri", 18, SWT.NONE));
+		
+
+				idx++;
+
+			}
+		} else if (list.size() == 0) {
+			ordertable.setItemCount(0);
+			ordertable.clearAll();
+			TableItem item = new TableItem(ordertable, SWT.NULL);
+			item.setText("Warning ");
+
+			item.setText(1, "No entries found.");
+
+			item.setFont(new Font(ordertable.getDisplay(), "Calibri", 18, SWT.NONE));
+		}
+
+		else {
+			ordertable.setItemCount(0);
+			ordertable.clearAll();
+			TableItem item = new TableItem(ordertable, SWT.NULL);
+			item.setText("Warning ");
+
+			item.setText(1, "Too many entries. Please keep specifying.");
+
+			item.setFont(new Font(ordertable.getDisplay(), "Calibri", 18, SWT.NONE));
+
+		}
+		
+
 	}
 
 	/**
