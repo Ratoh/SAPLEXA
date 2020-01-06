@@ -1,0 +1,10 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar 
+ */
+
+grammar grammar;
+
+public <commands> = ( hana | okay | select | book order );
+public <figures> = ( zero | one | two | three | four | five | six | seven | eight | nine );
