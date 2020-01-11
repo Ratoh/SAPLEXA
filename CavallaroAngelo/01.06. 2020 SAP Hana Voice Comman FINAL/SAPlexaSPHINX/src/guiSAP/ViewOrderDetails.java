@@ -31,6 +31,8 @@ public class ViewOrderDetails {
 	Text distributorName;
 	Label distributorIDPlate;
 	Text distributorID;
+	
+	Text infoBoxBookOrder;
 
 	Label labelIssuedDate;
 	Text issuedDate;
@@ -213,7 +215,7 @@ public class ViewOrderDetails {
 	public void createButtons() {
 
 		labelSelectedRows = new Label(overview, SWT.NONE);
-		labelSelectedRows.setText("Selektiert wurden: \n");
+		labelSelectedRows.setText("");
 		labelSelectedRows.setFont(new Font(display, "Arial", 19, SWT.BOLD));
 		labelSelectedRows.setLayoutData(new GridData(SWT.FILL, SWT.NONE, true, false, 1, 1));
 		
@@ -237,20 +239,26 @@ public class ViewOrderDetails {
 				}
 			}
 		});
-
-		showSelectedRows = new Button(overview, SWT.PUSH);
-		showSelectedRows.setText("Book");
-		showSelectedRows.setForeground(new Color(display, 0, 255, 0));
-		showSelectedRows.setFont(new Font(display, "Arial", 18, SWT.BOLD));
-		showSelectedRows.setLayoutData(new GridData(SWT.FILL, SWT.NONE, true, false, 1, 1));
-		showSelectedRows.addSelectionListener(new BookingListener(table, labelSelectedRows));
 		
-		backDeliveryButton = new Button(overview, SWT.PUSH);
-		backDeliveryButton.setText("Mark as error due to...");
-		backDeliveryButton.setForeground(new Color(display, 255, 0, 0));
-		backDeliveryButton.setFont(new Font(display, "Arial", 18, SWT.BOLD));
-		backDeliveryButton.setLayoutData(new GridData(SWT.FILL, SWT.NONE, true, false, 1, 1));
-		backDeliveryButton.addSelectionListener(new BackDeliveryListener(display));
+		infoBoxBookOrder = new Text(overview, SWT.NONE);
+		infoBoxBookOrder.setLayoutData(new GridData(SWT.FILL, SWT.NONE, true, false, 2, 1));
+		infoBoxBookOrder.setEditable(false);
+		infoBoxBookOrder.setFont(new Font(display, "Arial", 18, SWT.BOLD));
+		infoBoxBookOrder.setText("Say \"Book Order\" for adding a unit to stock");
+
+//		showSelectedRows = new Button(overview, SWT.PUSH);
+//		showSelectedRows.setText("Book");
+//		showSelectedRows.setForeground(new Color(display, 0, 255, 0));
+//		showSelectedRows.setFont(new Font(display, "Arial", 18, SWT.BOLD));
+//		showSelectedRows.setLayoutData(new GridData(SWT.FILL, SWT.NONE, true, false, 1, 1));
+//		showSelectedRows.addSelectionListener(new BookingListener(table, labelSelectedRows));
+//		
+//		backDeliveryButton = new Button(overview, SWT.PUSH);
+//		backDeliveryButton.setText("Mark as error due to...");
+//		backDeliveryButton.setForeground(new Color(display, 255, 0, 0));
+//		backDeliveryButton.setFont(new Font(display, "Arial", 18, SWT.BOLD));
+//		backDeliveryButton.setLayoutData(new GridData(SWT.FILL, SWT.NONE, true, false, 1, 1));
+//		backDeliveryButton.addSelectionListener(new BackDeliveryListener(display));
 
 	
 	}

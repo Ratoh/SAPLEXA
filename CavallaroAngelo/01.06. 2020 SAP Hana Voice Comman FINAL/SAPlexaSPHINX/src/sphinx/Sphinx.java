@@ -492,6 +492,7 @@ public class Sphinx {
 		
 		Display.getDefault().syncExec(new Runnable() {
 		    public void run() {
+		    	
 		    	DialogGoodsMoved dgm = new DialogGoodsMoved(ordertable.getShell(), matdoc);
 				dgm.open();
 		    }
